@@ -1,0 +1,10 @@
+.content-secondary {
+  background: chartreuse;
+  height: 400px;
+  display: flex;
+
+  flex-direction: row;
+}
+.md-5 {
+  margin: 50px;
+}

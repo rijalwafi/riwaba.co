@@ -1,0 +1,17 @@
+.card-header {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.card-content {
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  border-radius: 5px;
+}
+.card-image {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: 0.5s;
+}

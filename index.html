@@ -7,19 +7,48 @@
     <title>Riwaba.co</title>
   </head>
   <body>
-    <header class="active card" id="navbar">
+    <!-- header -->
+    <header class="active card-header" id="navbar">
       <a href="#" class="logo">Riwaba<span>.CO</span></a>
       <ul>
         <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Menuu</a></li>
+        <li><a href="#project">Project</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+
       <span class="menuIcon" onclick="menuToogle();"></span>
     </header>
-    <div class="container">
+    <div class="scroll-container">
+      <div class="scroll-bar" id="myBar"></div>
+    </div>
+    <!-- end of header -->
+   
+      
+        
+      <div class="content-secondary">
+        <div class="container-atas-1">
+        <p class="margin-1 text-white text-medium" id="typewriter">
+          Lorem ipsum dolor sit a
+          met consectetur adipisicing elit. Obcaecati, placeat! Placeat 
+          dolores ullam illum esse at minima veniam natus dolorum 
+          mollitia magni qui harum et exercitationem earum rerum, 
+          ab ipsa doloremque. Cum ipsa, sapiente, obcaecati quisquam 
+          exercitationem aliquam delectus blanditiis illo eaque nobis
+          dignissimos doloribus ea, ut nam placeat? Aut!</p>
+        </div>
+        <div class="container-atas-2">
+        <img  src="./assets/img/undraw_asset_selection_ix3v - Copy.png" alt="">
+          </div>
+         
+      </div>
+       
+    
+    
+    <div class="container" id="project">
+      <h1 class="text-title">Our <span class="text-green"> Project</span></h1>
       <div class="content">
-        <div class="bannerText" id="slideShowText">
+        <div class="bannerText " id="slideShowText">
           <div class="active">
             <h2>My PC</h2>
             <p>
@@ -51,52 +80,47 @@
             <a href="#">Read More</a>
           </div>
         </div>
-
-        <div class="bannerImg" id="slideshow">
+       
+          <img class="icons-control control" 
+            src="./assets/img/back.png"
+            onclick="prevSlide();prevSlideText();"
+        />
+        <div class="bannerImg card-content" id="slideshow">
           <img src="./assets/img/1.jpg" class="active" />
           <img src="./assets/img/2.jpg" />
           <img src="./assets/img/3.jpg" />
         </div>
+        
+          <img class="icons-control control"
+            src="./assets/img/right-arrow.png"
+            onclick="nextSlide();nextSlideText();"
+        />
       </div>
-      <div class="icons">
-        <ul class="sci">
-          <li>
-            <a href="#"><img src="./assets/img/facebook-logo.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./assets/img/instagram-sketched.png" alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/img/facebook-logo.png" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="control">
-          <li>
-            <a href="#">
-              <img
-                src="./assets/img/back.png"
-                onclick="prevSlide();prevSlideText();"
-            /></a>
-          </li>
-          <li>
-            <a href="#">
-              <img
-                src="./assets/img/right-arrow.png"
-                onclick="nextSlide();nextSlideText();"
-            /></a>
-          </li>
-        </ul>
-      </div>
+</div>
+     
     </div>
-    <div class="container">
-      <div class="content card-header" style="background: rgb(240, 231, 231);">
-        <div class="card">
+    <div class="container-secondary">
+      <div class="content-secondary">
+        <div>
           <p>halow</p>
         </div>
       </div>
-    </div>
+        <div class="icons">
+          <ul class="sci">
+            <li>
+              <a href="#"><img src="./assets/img/facebook-logo.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/img/instagram-sketched.png" alt=""
+              /></a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    <script src="./assets/js/typewriter-simple.js"></script>
+    <script src="./assets/js/scroll-bar.js"></script>
     <script src="./assets/js/slide.js"></script>
   </body>
 </html>
